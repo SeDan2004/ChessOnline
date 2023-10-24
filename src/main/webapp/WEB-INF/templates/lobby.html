@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+	    <title>Лобби</title>
+	    <meta charset="UTF-8"/>
+	    <meta name="viewport" content="width=device-width height=device-height"/>
+	    <link rel="stylesheet" th:href="@{/lobby/lobby.css}"/>
+	</head>
+    <body>
+		<header>
+			<h2 th:text="${'Ваш рейтинг: ' + person.getRating()}" class="rating"></h2>
+			
+            <div class="menu_btn">
+			    <div></div>
+			    <div></div>
+			    <div></div>
+			</div>
+			
+		    <div class="header_btns">
+			    <div class="user_btn">
+				    <div th:insert="~{images/svgIcons :: user}" class="user_icon"></div>
+				    <p th:text="${person.getLogin()}"></p>
+				</div>
+			</div>
+		</header>
+		
+		<main></main>
+		
+		<footer></footer>
+		
+	    <script th:src="@{/lobby/lobby.js}"></script>
+	</body>
+</html>

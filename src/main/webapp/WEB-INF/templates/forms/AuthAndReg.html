@@ -1,0 +1,56 @@
+
+<th:block th:fragment="AuthAndRegChoiceForm">
+    <div class="auth_and_reg_choice active_form">
+	    <div class="auth_btn">
+		    <p>Войти</p>
+	    </div>
+		
+	    <div class="reg_btn">
+		    <p>Зарегистрироваться</p>
+	    </div>
+    </div>
+</th:block>
+
+<th:block th:fragment="AuthForm">
+    <div class="auth">
+	    <div class="auth_fields">
+		    <input type="text" placeholder="Логин">
+		    <input type="password" placeholder="Пароль">
+		    
+		    <div class="remember">
+			    <p>Запомнить меня</p>
+			    <input type="checkbox">
+		    </div>
+		</div>
+		
+		<div class="footer_form">
+		    <div class="back">
+			    <p>Назад</p>
+			</div>
+			
+		    <div class="auth_accept_btn">
+			    <p>Войти</p>
+			</div>
+		</div>
+	</div>
+</th:block>
+
+<th:block th:fragment="RegForm">
+    <div class="reg">
+	    <div class="reg_fields">
+		    <input type="text" placeholder="Логин">
+		    <input type="password" placeholder="Пароль">
+		    <input type="password" placeholder="Повторите пароль">
+		</div>
+		
+		<div class="footer_form">
+		    <div class="back">
+			    <p>Назад</p>
+			</div>
+			
+		    <div class="reg_accept_btn">
+			    <p>Войти</p>
+			</div>
+		</div>
+	</div>
+</th:block>
